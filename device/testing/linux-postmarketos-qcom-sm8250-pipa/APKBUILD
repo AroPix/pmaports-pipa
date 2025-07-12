@@ -2,7 +2,7 @@
 # Kernel config based on: arch/arm64/configs/sm8250.config
 _flavor="postmarketos-qcom-sm8250-pipa"
 pkgname=linux-$_flavor
-pkgver=6.12.0
+pkgver=6.15.4
 pkgrel=0
 pkgdesc="Mainline kernel fork for Xiaomi Pad 6"
 arch="aarch64"
@@ -29,7 +29,7 @@ makedepends="
 "
 
 # Source
-_commit="02a88f7bd5fb5ab7eecf89e64cf8c40752688671"
+_commit="ccbc89978a64c9bb6b41ef77d876f11582eae85a"
 _config="config-$_flavor.$arch"
 
 source="
@@ -67,6 +67,6 @@ package() {
 }
 
 sha512sums="
-a9c81b22c443157d9979a01a97dc933505b71e410f242796bfba7922751be45a95caa120174ded9ce3959fdf73a50c3901e267ea75bc9a29438371207d8dcd22  linux-postmarketos-qcom-sm8250-pipa.tar.gz
+e42bc449c347a8f5b5c9bbe4f58ee393c00ea190aeace911d7cfc41190bf810c6333862ff2cb2ea37fe83f2314cf63d54698b9c5268423d23c03c2afbe13a342  linux-postmarketos-qcom-sm8250-pipa.tar.gz
 e1269d2c987e81249b5f25a438b2b8662ec84e91adc29ea949366e98ed3df08c8ab97dbd0f887c0e211a1d133bbdd8e4e2a7a3381dcd41071311025158aea44d  config-postmarketos-qcom-sm8250-pipa.aarch64
 "
